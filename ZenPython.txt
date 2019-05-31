@@ -23,9 +23,13 @@
 25 Special cases aren't special enough to break the rules.
 26 Although practicality beats purity.
 <<<<<<< HEAD
+<<<<<<< HEAD
 30 There should be one-- and preferably only one --obvious way to do it.
 =======
 27 Errors should never pass silently.
 28 Unless explicitly silenced.
+=======
+29 In the face of ambiguity, refuse the temptation to guess.
+>>>>>>> volynets_roman
 30 There should be one-- and preferably only one --obvious way to do it.
 >>>>>>> 17f023cc9e511872fc4b1574e1020426a107a983

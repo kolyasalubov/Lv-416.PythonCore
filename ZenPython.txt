@@ -13,5 +13,7 @@
 13 There should be one-- and preferably only one --obvious way to do it.
 14 Although that way may not be obvious at first unless you're Dutch.
 15 Now is better than never.
+
+21 Explicit is better than implicit.
 25 Special cases aren't special enough to break the rules.
 26 Although practicality beats purity.

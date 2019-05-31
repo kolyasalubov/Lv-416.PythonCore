@@ -17,6 +17,7 @@
 14 Although that way may not be obvious at first unless you're Dutch.
 15 Now is better than never.
 17 If the implementation is hard to explain, it's a bad idea.
+16 Errors should never pass silently.
 19 Namespaces are one honking great idea -- let's do more of those!
 21 Explicit is better than implicit.
 22 Simple is better than complex.
@@ -26,4 +27,5 @@
 26 Sparse is better than dense.
 27 Errors should never pass silently.
 28 Unless explicitly silenced.
+29 In the face of ambiguity, refuse the temptation to guess.
 30 There should be one-- and preferably only one --obvious way to do it.

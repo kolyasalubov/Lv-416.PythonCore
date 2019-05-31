@@ -1,14 +1,11 @@
 1
 2
-<<<<<<< HEAD
 3 Simple is better than complex.
 4
 5
-=======
 3
 4 Complex is better than complicated.
 5. Flat is better than nested.
->>>>>>> b25e51cfd34304d3a49dc3445c30fcce3b6a4ac7
 6. Sparse is better than dense.
 7
 8 Special cases aren't special enough to break the rules.

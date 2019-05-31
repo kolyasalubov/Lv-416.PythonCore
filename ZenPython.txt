@@ -2,6 +2,9 @@
 2 Explicit is better than implicit.
 3 Simple is better than complex.
 4 Complex is better than complicated.
+5. Flat is better than nested.
+6. Sparse is better than dense.
+4 Complex is better than complicated.
 5 Flat is better than nested.
 6 Sparse is better than dense.
 7 Readability counts.
@@ -14,3 +17,13 @@
 14 Although that way may not be obvious at first unless you're Dutch.
 15 Now is better than never.
 17 If the implementation is hard to explain, it's a bad idea.
+19 Namespaces are one honking great idea -- let's do more of those!
+21 Explicit is better than implicit.
+22 Simple is better than complex.
+23 Special cases aren't special enough to break the rules.
+24 Although practicality beats purity.
+25 Special cases aren't special enough to break the rules.
+26 Sparse is better than dense.
+27 Errors should never pass silently.
+28 Unless explicitly silenced.
+30 There should be one-- and preferably only one --obvious way to do it.

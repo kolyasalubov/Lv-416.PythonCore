@@ -1,0 +1,13 @@
+name=input("What is your name?")
+age = input("How old are u?")
+adress= input("Where do u live?")
+print ("Hello ,", name)
+print ("Your age is ",age)
+print ("You live in", adress)
+
+Variable_1=int(input ( "input first variable" ))
+Variable_2=int(input("input second variable"))
+print ("a + b = ",Variable_1 + Variable_2)
+print ("a - b = ",Variable_1 - Variable_2)
+print ("a * b = ",Variable_1 * Variable_2)
+print ("a / b = ",Variable_1 / Variable_2)

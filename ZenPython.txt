@@ -29,3 +29,4 @@
 29 Errors should never pass silently.
 30 Unless explicitly silenced.
 31 What is wrong?
+32 Is all OK?

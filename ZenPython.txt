@@ -28,4 +28,4 @@
 28 Although practicality beats purity.
 29 Errors should never pass silently.
 30 Unless explicitly silenced.
-31 ўо тут не так?
+31 What is wrong?

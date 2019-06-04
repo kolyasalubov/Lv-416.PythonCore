@@ -1,0 +1,7 @@
+a = int(input("input a: "))
+b = int(input("input b: "))
+z = input("choose an operation: /, +, -, *: ")
+print (a, "+", b, "=", a+b)
+print (a, "/", b, "=", a/b)
+print (a, "*", b, "=", a*b)
+print (a, "-", b, "=", a-b)

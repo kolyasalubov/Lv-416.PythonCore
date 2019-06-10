@@ -171,3 +171,63 @@
 
 # value = [ for value in range(int(input("input your number: "))) item = input("Input your text: ") list.append(item)]
 
+# ////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# 1.	Написати функцію, яка знаходить середнє арифметичне значення довільної кількості чисел.
+# def arithmetic_mean(*arg):
+#     """this function counts the arithmetic mean"""
+#     return print("arithmetic mean: ",sum(arg) / len(arg))
+# arithmetic_mean(1,2,3,4)
+
+# /////////////////////////////////////////////////////////
+
+# 2.	Написати функцію, яка повертає абсолютне значення числа
+# def modul(num):
+#     """This function finds a number module"""
+#     if num >= 0:
+#         return num
+#     else:
+#         return -num
+# print(modul(-5))
+
+# ////////////////////////////////////////////////
+
+# 3.	Написати функцію, яка знаходить максимальне число з двох чисел, а також в функції використати
+#  рядки документації DocStrings.
+# def find_max(num1,num2):
+#     """maximum number of two numbers"""
+#     if num1>num2: return num1
+#     elif num1==num2:
+#         print("Numbers are equal")
+#     else: return num2
+# print("max number: ",find_max(5,3))
+
+# ////////////////////////////////////////////////////////
+
+# 4.	Написати програму, яка обчислює площу прямокутника, трикутника та кола 
+# (написати три функції для обчислення площі, і викликати їх в головній програмі в залежності від 
+# вибору користувача)
+
+
+# choise_figure = str(input("choose a geometric figure:"'\n'"Triangle - 1"'\n'"Circle - 2"'\n'"Rectangle - 3"'\n'))
+# def area_triangle(a,b,c):
+#     p=(a+b+c)/2
+#     return (p*(p-a)*(p-b)*(p-c))**0.5
+# def area_circle(r):
+#     return 3.14*(r**2) 
+# def area_rectangle(a,b):
+#     return a*b
+# if choise_figure == "1":
+#     a = float(input("Enter the first side: "))
+#     b = float(input("Enter the second side: "))
+#     c = float(input("Enter the third side: "))
+#     print("Area of triangle: ",area_triangle(a,b,c),'m2')
+# elif choise_figure == "2":
+#     r = float(input("Enter radius: "))
+#     print("Area of circle: ",area_circle(r),"m2")
+# elif  choise_figure == "3" :
+#     a = float(input("Enter the first side: "))
+#     b = float(input("Enter the second side: "))
+#     print("Area of rectangele: ",area_rectangle(a,b),"m2")
+# else:
+#     print("You luse. Restart program!!!")

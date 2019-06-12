@@ -4,15 +4,8 @@
 
 i = 0
 j = 1
-
-while i < 100:
-    print (i, j)
-
-    res = i + j
-    print (i,j, res)
-
-    i = res + j
-    print (i, j, res)
-
-    j += 1
-    print(i, j, res)
+sum = 0
+while sum < 100:
+    print (sum)
+    sum = i + j
+    i, j = j, sum

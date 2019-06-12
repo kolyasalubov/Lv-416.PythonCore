@@ -1,3 +1,4 @@
+
 """
 Записати в стрічку філософію Пайтона
 Знайти в заданій стрічці кількість входжень слів (better, never, is)
@@ -5,8 +6,7 @@
 Замінити всі входження символу “і” на “&”
 """
 
-
-stroka = '''
+stroka = """
 The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -26,16 +26,17 @@ Now is better than never.
 Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those! '''
+Namespaces are one honking great idea -- let's do more of those! """
+
 
 
 
 
 #task 1.a
 
-print(stroka.count(" better "))
-print(stroka.count(" never "))
-print(stroka.count(" is "))
+print("the number of occurrences of words 'Better' is ",stroka.count(" better "))
+print("the number of occurrences of words 'never' is ",stroka.count(" never "))
+print("the number of occurrences of words 'is' is",stroka.count(" is "))
 
 # task 1.b
 

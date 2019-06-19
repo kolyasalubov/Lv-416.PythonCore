@@ -1,18 +1,27 @@
+import os
 import pygame
 import time
 import random
+# this is set up an appearing window on desktop
+x=0
+y=30
+os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (x,y)
 
 pygame.init()
-
-display_width=800
-display_height=600
-gameDisplay=pygame.display.set_mode((display_width,display_height))
+#set up game window
+display_width=1300
+display_height=735
+gameDisplay=pygame.display.set_mode((display_width,display_height),pygame.FULLSCREEN)
 pygame.display.set_caption("EvilDimansion")
+#
 clock=pygame.time.Clock()
-
+# 
 heroImage = pygame.image.load("D:\\PythonSoft\\Lv-416.PythonCore\\myGame\\hero.png")
-bgImage = pygame.image.load("D:\\PythonSoft\\Lv-416.PythonCore\\myGame\\StoneRoad.png")
 heroImage = pygame.transform.scale(heroImage, (50,50))
+
+bg = pygame.image.load("D:\\PythonSoft\\Lv-416.PythonCore\\myGame\\StoneRoad.png")
+
+
 hero_size=50
 
 enemyImage = pygame.image.load("D:\\PythonSoft\\Lv-416.PythonCore\\myGame\\enemy.png")
@@ -24,8 +33,6 @@ white=(255,255,255)
 red=(255,0,0)
 blue=(176,224,230)
 
-def things(thingsX,thingsY,thingsW,thingsH,color):
-    pygame.draw.rect(gameDisplay,color, [thingsX, thingsY,thingsW,thingsH])
 
 def hero(x,y):
     gameDisplay.blit(heroImage,(x,y)) # Drawing our image in propriate coordinates!
@@ -57,18 +64,15 @@ def you_died():
 def game_loop():
     x=(display_width*0.45)
     y=(display_height*0.45)
-    enemyX=(display_width*0.1)
-    enemyY=(display_height*0.1)
+    enemyX=random.randrange(0,701)
+    enemyY=random.randrange(0,501)
 
     deltaX=0
     deltaY=0
 
-    # things_startX=random.randrange(0,display_width)
-    # things_startY=-600
-    # things_speed=7
-    # thingsW=50
-    # thingsH=50
-    # color=black
+    enemySpeedx=5
+    enemySpeedy=5
+
     gameExit=False
 
     while not gameExit:
@@ -86,6 +90,8 @@ def game_loop():
                     deltaY=-5
                 elif event.key == pygame.K_DOWN:
                     deltaY=5
+                elif event.key == pygame.K_ESCAPE:
+                    pygame.display.set_mode((display_width,display_height))
 #stop moving object after release the button    
             if event.type == pygame.KEYUP:
                 if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
@@ -96,22 +102,29 @@ def game_loop():
         x+=deltaX
         y+=deltaY
 
+        # enemyX+=enemySpeedx
+        # enemyY+=enemySpeedy
+
 #set up map border, object bouncing between end of window on x and on y axis
-        if x>display_width - hero_size or x<0 :
+        if x>display_width - hero_size or x<0  :
             deltaX=-deltaX
         if y>display_height-hero_size or y<0:
             deltaY=-deltaY
+        
+        if enemyX>display_width - hero_size or enemyX<0  :
+            enemySpeedx=-enemySpeedx
+        if enemyY>display_height-hero_size or enemyY<0:
+            enemySpeedy=-enemySpeedy
             
             
 
         # print(x)
         # screen.blit(bgImage[0,0]) #layer*(order) of painting #1 if hero first and background white second, no car visible
         
-        # things(thingsX,thingsY,thingsW,thingsH,color)
-        # things(things_startX,things_startY,thingsW,thingsH,color)
-        print(x)
         gameDisplay.fill(white)
+        gameDisplay.blit(bg, (0, 0))
         enemy(enemyX,enemyY)
+
         hero(x,y)              #layer(order) of painting #2
 
         # if x>display_width - hero_size or x<0:
@@ -120,6 +133,8 @@ def game_loop():
         # if y>display_height-hero_size or y<0:
         #     gameExit = True
         #     you_died()
+        
         pygame.display.update()#update dsiplay after getting all events
+        
         clock.tick(60) #set up frames/sec in arg 
 game_loop()
